@@ -16,7 +16,7 @@ var countries = [
 
 $(function() {
   d3.xml('worldmap.svg', 'image/svg+xml', function(xml) {
-    $('#map').html(xml.documentElement);
+    $('#svg').html(xml.documentElement);
 
     d3.selectAll('path').each(function() {
       var newId =  $(this).attr('id').replace(/ /g, '_');
@@ -39,9 +39,9 @@ $(function() {
     }
 
     function pieChart() {
-      var w = 100,
-        h = 100,
-        r = 50,
+      var w = 300,
+        h = 300,
+        r = 100,
         color = ['#EA2E49', '#77C4D3'];
 
         var data = [{"value": countries.length}, {"value": 193 - countries.length}];

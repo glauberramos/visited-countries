@@ -5,7 +5,7 @@ body {
 
 #header {
   padding: 10px;
-  height: 200px;
+  height: 400px;
   text-align: center;
 }
 
@@ -14,45 +14,60 @@ body {
 }
 
 #footer h4 {
-  padding: 0 13px;
+  padding: 20px 0;
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 1.5em;
 }
 
 #header svg {
   float: left;
-  padding-left: 140px;
 }
 
 #statistic {
-  width: 550px;
+  width: 400px;
+  float: left;
 }
 
 #country {
   color: #F6F792;
-  font-size: 1.7em;
-  position: absolute;
-  top: 230px;
-  left: 325px;
+  font-size: 2.5em;
+  top: 90px;
+  position: relative;
 }
 
 #header .information {
   color: #EA2E49;
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
 h1 {
+  font-size: 3.5em;
   color: #F6F792;
 }
 
 h2 {
+  font-size: 2.5em;
   color: #DAEDE2;
+}
+
+#header-info {
+  width: 700px;
+  margin: 0 auto;
+}
+
+#pie-chart {
+  width: 250px;
+  top: 30px;
+  position: relative;
 }
 
 #map svg {
   margin-top: 10px;
-  width: 707px;
-  height: 460px;
+  width: 1200px;
+  height: 800px;
   border: 2px solid #77C4D3;
-  margin-left: 10px;
+  margin: 35px;
   border-radius: 5px;
 }
 
