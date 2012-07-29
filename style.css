@@ -1,0 +1,62 @@
+body {
+  font-family: 'Fresca', sans-serif;
+  background-color: rgba(51, 55, 68, 0.7);
+}
+
+#header {
+  padding: 10px;
+  height: 200px;
+  text-align: center;
+}
+
+#footer {
+  color: #F6F792;
+}
+
+#footer h4 {
+  padding: 0 13px;
+}
+
+#header svg {
+  float: left;
+  padding-left: 140px;
+}
+
+#statistic {
+  width: 550px;
+}
+
+#country {
+  color: #F6F792;
+  font-size: 1.7em;
+  position: absolute;
+  top: 230px;
+  left: 325px;
+}
+
+#header .information {
+  color: #EA2E49;
+  font-size: 1.5em;
+}
+
+h1 {
+  color: #F6F792;
+}
+
+h2 {
+  color: #DAEDE2;
+}
+
+#map svg {
+  margin-top: 10px;
+  width: 707px;
+  height: 460px;
+  border: 2px solid #77C4D3;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+path.hover {
+  fill: #F6F792 !important;
+}
+
