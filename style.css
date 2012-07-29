@@ -32,7 +32,12 @@ body {
 #country {
   color: #F6F792;
   font-size: 2.5em;
-  top: 90px;
+  top: 40px;
+  left: 550px;
+  position: absolute;
+}
+
+#country-relative {
   position: relative;
 }
 
@@ -67,7 +72,7 @@ h2 {
   width: 1200px;
   height: 800px;
   border: 2px solid #77C4D3;
-  margin: 35px;
+  margin: 0 35px;
   border-radius: 5px;
 }
 
