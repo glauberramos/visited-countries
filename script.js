@@ -1,19 +1,3 @@
-var countries = [
-  'brazil',
-  'argentina',
-  'usa',
-  'ireland',
-  'britain',
-  'france',
-  'italy',
-  'belgium',
-  'netherlands',
-  'czech',
-  'spain',
-  'germany'
-]
-
-
 $(function() {
   d3.xml('worldmap.svg', 'image/svg+xml', function(xml) {
     $('#svg').html(xml.documentElement);
