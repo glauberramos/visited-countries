@@ -261,4 +261,6 @@ crete
 
 2 - After you changed the file the page will automatically update with the data.
 
+#The page is based on the 193 countries of the Member states of the United Nations. The map and the list itself contains more geographical areas than the original 193 contries, so be sure to add just valid countries to the countries.js file.
+
 3 - Enjoy your page and show it to everyone.
