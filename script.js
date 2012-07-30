@@ -9,6 +9,9 @@ $(function() {
       d3.selectAll('.hover').classed('hover', false);
       d3.selectAll('#' + this.id).classed('hover', true);
       $('#country').text(parseId(this.id));
+    }).on('mouseout', function() {
+      d3.selectAll('.hover').classed('hover', false);
+      $('#country').text('');
     });
 
     $(countries).each(function() {
