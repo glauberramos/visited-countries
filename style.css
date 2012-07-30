@@ -7,10 +7,12 @@ body {
   padding: 10px;
   height: 400px;
   text-align: center;
+  background-color: black;
 }
 
 #footer {
   color: #F6F792;
+  background-color: black;
 }
 
 #footer h4 {
@@ -70,13 +72,17 @@ h2 {
   position: relative;
 }
 
+#map {
+  border-top: 4px dotted black;
+  border-bottom: 4px dotted black;
+  padding-bottom: 30px;
+}
+
 #map svg {
   margin-top: 10px;
   width: 1200px;
   height: 800px;
-  border: 2px solid #77C4D3;
   margin: 0 35px;
-  border-radius: 5px;
 }
 
 path.hover {
