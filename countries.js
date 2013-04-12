@@ -10,5 +10,7 @@ countries = [
   'netherlands',
   'czech',
   'spain',
-  'germany'
+  'germany',
+  'haiti',
+  'uruguay'
 ]
