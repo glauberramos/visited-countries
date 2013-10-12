@@ -1,6 +1,5 @@
 body {
   font-family: 'Fresca', sans-serif;
-  background-color: rgba(51, 55, 68, 0.7);
 }
 
 #header {
@@ -85,7 +84,14 @@ h2 {
   margin: 0 35px;
 }
 
-path.hover {
+path {
+  border: 2px solid white;
+}
+
+g:hover path {
   fill: #F6F792 !important;
 }
 
+path:hover {
+  fill: #F6F792 !important;
+}
