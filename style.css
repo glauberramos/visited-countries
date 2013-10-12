@@ -18,7 +18,8 @@ body {
   padding: 20px 0;
   width: 1200px;
   margin: 0 auto;
-  font-size: 1.5em;
+  font-size: 1em;
+  text-align: center;
 }
 
 #country {
@@ -27,8 +28,8 @@ body {
 }
 
 #header .information {
-  color: #EA2E49;
-  font-size: 1.8em;
+  color: #F6F792;
+  font-size: 1.5em;
 }
 
 h1 {
@@ -76,14 +77,10 @@ a:visited, a {
   color: #77C4D3;
 }
 
-path {
-  border: 2px solid white;
-}
-
-g:hover path {
+#map g:hover path {
   fill: #F6F792 !important;
 }
 
-path:hover {
+#map path:hover {
   fill: #F6F792 !important;
 }

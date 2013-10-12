@@ -54,7 +54,7 @@ $(function() {
 
       var path = svg.selectAll("path")
           .data(pie(dataset.apples))
-        .enter().append("path")
+          .enter().append("path")
           .attr("fill", function(d, i) { return color[i]; })
           .attr("d", arc);
     }
