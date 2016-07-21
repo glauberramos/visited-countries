@@ -1,5 +1,7 @@
 countries = [
   'br',
+  'ec',
+  'cl',
   'ar',
   'us',
   'ie',
