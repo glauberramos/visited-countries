@@ -1,9 +1,9 @@
 $(function() {
-  d3.xml('worldmap4.svg', 'image/svg+xml', function(xml) {
+  d3.xml('worldmap.svg', 'image/svg+xml', function(xml) {
     $('#svg').html(xml.documentElement);
 
     d3.selectAll('path').each(function() {
-      $(this).attr('fill', '#77C4D3');
+      $(this).attr('fill', '#ffce5d');
     });
 
     d3.selectAll('g').on('mouseover', function () {
@@ -17,8 +17,8 @@ $(function() {
     });
 
     $(countries).each(function() {
-      $('#' + this).css('fill', '#EA2E49');
-      $('#' + this + ' path').css('fill', '#EA2E49');
+      $('#' + this).css('fill', '#c0442c');
+      $('#' + this + ' path').css('fill', '#c0442c');
     });
 
     $('#number-countries').text(countries.length);
@@ -63,5 +63,3 @@ $(function() {
 
   });
 });
-
-

@@ -1,46 +1,62 @@
 body {
-  font-family: 'OpenSans', sans-serif;
+  font-family: 'Permanent Marker', cursive;
+  background: #198786;
+}
+
+img {
+  width: 140px;
 }
 
 #header {
-  padding: 10px;
-  height: 400px;
+  padding: 70px 0;
   text-align: center;
-  background-color: #333;
+  background-color: #ffce5d;
 }
 
 #footer {
-  color: #F6F792;
-  background-color: #333;
+  color: #222;
+  background-color: #ffce5d;
 }
 
 #footer h4 {
-  padding: 20px 0;
   width: 1200px;
+  padding: 20px 0;
   margin: 0 auto;
   font-size: 1em;
   text-align: center;
 }
 
 #country {
-  color: #F6F792;
   font-size: 2.5em;
+  color: #f6f792;
 }
 
 #header .information {
-  color: #F6F792;
-  font-size: 1.5em;
+  font-size: 3em;
+  color: #c0442c;
 }
 
 h1 {
-  font-size: 3em;
-  color: #F6F792;
+  margin: 0;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 4.5em;
+  color: #222;
 }
 
 h2 {
-  font-size: 2em;
-  color: #DAEDE2;
   margin: 0;
+  font-size: 2.5em;
+  color: #198786;
+  text-shadow: -2px 0 #222, 0 2px #222, 2px 0 #222, 0 -2px #222;
+}
+
+p {
+  position: relative;
+  top: -10px;
+  padding: 0;
+  margin: 0;
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 40px;
 }
 
 #header-info {
@@ -68,19 +84,35 @@ h2 {
 }
 
 #map svg {
-  margin-top: 10px;
   width: 100%;
   height: 660px;
+  margin-top: 10px;
+}
+
+.numbers {
+  display: inline-block;
+  margin-left: 20px;
+  line-height: 1.2em;
+  text-align: center;
+  vertical-align: super;
+}
+
+.numbers a {
+  display: block;
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 50px;
+  color: #198786;
+  text-shadow: -2px 0 #222, 0 2px #222, 2px 0 #222, 0 -2px #222;
 }
 
 a:visited, a {
-  color: #77C4D3;
+  color: #c0442c;
 }
 
 #map g:hover path {
-  fill: #F6F792 !important;
+  fill: #efb1b1 !important;
 }
 
 #map path:hover {
-  fill: #F6F792 !important;
+  fill: #efb1b1 !important;
 }
