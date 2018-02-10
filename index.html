@@ -2,18 +2,16 @@
 <html>
   <head>
     <title>Countries I have visited</title>
-    <link href="normalize.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Permanent+Marker" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="favicon.ico" rel="icon" type="image/png">
-    <script src="d3.v2.min.js"></script>
-    <script src="jquery-1.7.2.min.js"></script>
+    <script src="d3.v4.min.js"></script>
     <script src="countries.js"></script>
     <script src="script.js"></script>
   </head>
   <body>
-    <div id="header">
-      <img src="backpack.png" />
+    <header id="header">
+      <img src="backpack.png" alt="" />
       <h1>Glauber's</h1>
       <p>visited countries</p>
       <div id="header-info">
@@ -21,12 +19,12 @@
           <h2><span id="number-countries" class="information"></span><span class="numbers"><span>of</span><a href="http://en.wikipedia.org/wiki/Member_states_of_the_United_Nations ">193</a></span></h2>
         </div>
       </div>
-    </div>
-    <div id="map">
+    </header>
+    <main id="map">
       <div id="svg"></div>
-    </div>
-    <div id="footer">
-      <h4>Created by <a href="http://www.glauberramos.com">Glauber Ramos</a> using D3, Jquery and HTML/CSS. If you want create your own check <a href="https://github.com/glauberramos/visited-countries/" >github</a> for instructions.</h4>
-    </div>
+    </main>
+    <footer id="footer">
+      <h4>Created by <a href="http://www.glauberramos.com">Glauber Ramos</a> using D3 and HTML/CSS. If you want create your own check <a href="https://github.com/glauberramos/visited-countries/">github</a> for instructions.</h4>
+    </footer>
   </body>
 </html>
