@@ -1,6 +1,9 @@
+html,
 body {
   font-family: 'Permanent Marker', cursive;
   background: #198786;
+  margin: 0;
+  padding: 0;
 }
 
 img {
