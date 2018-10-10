@@ -1,4 +1,5 @@
-#Countries I have visited
+# Countries I have visited 
+
 This project is created using D3.js, Jquery and HTML/CSS. You can easily create your own page by changing the file countries.js.
  
 1 - In this file you need to add the countries based on the list bellow.
