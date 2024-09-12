@@ -11,11 +11,13 @@
       d3.selectAll("g").on("mouseover", function () {
         d3.selectAll(".hover").classed("hover", false);
         d3.selectAll("#" + this.id).classed("hover", true);
+        displayCountryName(this.id);
       });
 
       d3.selectAll("path").on("mouseover", function () {
         d3.selectAll(".hover").classed("hover", false);
         d3.selectAll("#" + this.id).classed("hover", true);
+        displayCountryName(this.id);
       });
 
       countries.map(function (country) {
@@ -29,3 +31,8 @@
       );
     });
 })();
+
+function displayCountryName(countryId) {
+  const countryName = countryId.replace(/_/g, " ");
+  d3.select("#country-name").text(countryName);
+}

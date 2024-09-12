@@ -120,3 +120,14 @@ a {
 #map path:hover {
   fill: #efb1b1 !important;
 }
+
+#country-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+  height: 28px;
+}
