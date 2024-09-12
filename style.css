@@ -124,9 +124,9 @@ a {
 #country-name {
   font-size: 24px;
   font-weight: bold;
-  color: #333;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 10px 0;
+  color: #ffce5d;
+  background-color: rgb(26 135 134);
+  padding: 20px 0 0;
   border-radius: 5px;
   text-align: center;
   height: 28px;
