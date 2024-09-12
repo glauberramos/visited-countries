@@ -8,11 +8,12 @@ body {
 }
 
 img {
-  width: 140px;
+  width: 100px;
+  position: relative;
 }
 
 #header {
-  padding: 70px 0;
+  padding: 50px 0;
   text-align: center;
   background-color: #ffce5d;
 }
@@ -38,6 +39,7 @@ img {
 #header .information {
   font-size: 3em;
   color: #c0442c;
+  font-weight: 600;
 }
 
 h1 {
