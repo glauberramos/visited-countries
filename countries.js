@@ -30,6 +30,13 @@ countries = [
   "croatia",
   "hungary",
   "portugal",
+  "austria",
+  "monaco",
+  "switzerland",
+  "serbia_and_montenegro",
+  "albania",
+  "bosnia",
+  "greece"
 ];
 
 countriesSigla =
