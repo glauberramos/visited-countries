@@ -47,14 +47,14 @@ h1 {
   color: #222;
 }
 
-h2 {
+.number-section {
   margin: 0;
   font-size: 2.5em;
   color: #198786;
   text-shadow: 2px 1px #333;
 }
 
-p {
+.subheader {
   position: relative;
   top: -10px;
   padding: 0;

@@ -30,15 +30,32 @@
       href="https://glauberramos.github.io/visited-countries"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Interactive map of countries visited by Glauber Ramos, showcasing travel experiences around the world."
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Countries I have visited",
+        "description": "Interactive map of countries visited by Glauber Ramos",
+        "author": {
+          "@type": "Person",
+          "name": "Glauber Ramos",
+          "url": "http://www.glauberramos.com"
+        }
+      }
+    </script>
   </head>
   <body>
     <header id="header">
       <img src="backpack.png" alt="Backpack icon" title="Backpack icon" />
       <h1>Glauber's</h1>
-      <p>visited countries</p>
+      <h2 class="subheader">visited countries</h2>
       <div id="header-info">
         <div id="statistic">
-          <h2>
+          <div class="number-section">
             <span id="number-countries" class="information"></span>
 
             <span class="numbers">
