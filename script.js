@@ -20,7 +20,10 @@
         displayCountryName(this.id);
       });
 
-      countries.map(function (country) {
+      const flattenedCountries = countries.flatMap((country) =>
+        country.split(" ")
+      );
+      flattenedCountries.forEach(function (country) {
         d3.select("#" + country).style("fill", "#c0442c");
         d3.select("#" + country + " path").style("fill", "#c0442c");
       });
