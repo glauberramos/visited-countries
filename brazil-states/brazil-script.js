@@ -59,5 +59,5 @@ function displayStateName(stateId) {
   };
 
   const stateName = stateNames[stateId] || stateId;
-  d3.select("#country-name").text(stateName);
+  document.getElementById("country-name").innerHTML = stateName;
 }
