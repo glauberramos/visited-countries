@@ -87,9 +87,10 @@ h1 {
 
 #map {
   padding-bottom: 30px;
+  text-align: center;
 }
 
-#map svg {
+#map .full-map svg {
   width: 100%;
   height: 660px;
   margin-top: 10px;

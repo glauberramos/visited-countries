@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Brazilian States I have visited</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Permanent+Marker"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="favicon.ico" rel="icon" type="image/png" />
+    <script src="d3.v4.min.js"></script>
+    <script src="brazil.js"></script>
+    <script src="brazil-script.js"></script>
+    <meta property="og:title" content="Brazilian States I have visited" />
+    <meta
+      property="og:description"
+      content="Interactive map of Brazilian states visited by Glauber Ramos"
+    />
+    <meta
+      property="og:image"
+      content="https://glauberramos.github.io/visited-countries/thumb.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <header id="header">
+        <img src="backpack.png" alt="Backpack icon" title="Backpack icon" />
+        <h1>Glauber's</h1>
+        <h2 class="subheader">visited brazilian states</h2>
+        <div id="header-info">
+          <div id="statistic">
+            <div class="number-section">
+              <span id="number-states">0</span> states -
+              <span id="brazil-percent">0%</span> of Brazil
+            </h2>
+          </div>
+        </div>
+      </header>
+    <main id="map">
+      <div id="country-name"></div>
+      <div id="svg"></div>
+    </main>
+    <footer id="footer">
+      <h4>
+        Created with ❤️ by
+        <a href="http://www.glauberramos.com" target="_blank">Glauber Ramos</a>.
+        Check
+        <a
+          href="https://github.com/glauberramos/visited-countries/"
+          target="_blank"
+          >github</a
+        >
+        for instructions on how to create your own.
+      </h4>
+    </footer>
+  </body>
+</html>
