@@ -116,10 +116,6 @@ a {
   color: #c0442c;
 }
 
-#map g:hover path {
-  fill: #efb1b1 !important;
-}
-
 #map path:hover {
   fill: #efb1b1 !important;
 }
