@@ -37,4 +37,6 @@ countries = [
   "albania",
   "bosnia",
   "greece",
+  "singapore",
+  "vietnam",
 ];
