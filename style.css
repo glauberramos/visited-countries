@@ -154,7 +154,7 @@ h1 {
 }
 
 #map {
-  padding: 0 0 40px;
+  padding: 30px 0 40px;
   text-align: center;
   background: linear-gradient(180deg, var(--primary-dark) 0%, var(--primary-medium) 50%, #3d6a6a 100%);
   position: relative;

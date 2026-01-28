@@ -3,15 +3,18 @@
   <head>
     <meta charset="UTF-8">
     <title>Brazilian States I have visited</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Permanent+Marker"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link href="../style.css" rel="stylesheet" type="text/css" />
+    <style>
+      #map .full-map {
+        max-width: 700px;
+        margin: 0 auto;
+        height: 620px;
+      }
+    </style>
     <link href="../favicon.ico" rel="icon" type="image/png" />
-    <script src="../d3.v4.min.js"></script>
-    <script src="brazil.js"></script>
-    <script src="brazil-script.js"></script>
     <meta property="og:title" content="Brazilian States I have visited" />
     <meta
       property="og:description"
@@ -27,32 +30,44 @@
     <header id="header">
         <img src="../backpack.png" alt="Backpack icon" title="Backpack icon" />
         <h1>Glauber's</h1>
-        <h2 class="subheader">visited brazilian states</h2>
+        <h2 class="subheader">🇧🇷 visited brazilian states 🇧🇷</h2>
         <div id="header-info">
           <div id="statistic">
             <div class="number-section">
-              <span id="number-states">0</span> states -
-              <span id="brazil-percent">0%</span> of Brazil
-            </h2>
+              <span class="passport-stamp">
+                <span id="number-states" class="information">0</span>
+                <span class="stamp-label">states</span>
+              </span>
+              <span class="divider">•</span>
+              <span class="numbers">
+                <span id="brazil-percent">0%</span>
+                <span>of</span>
+                <span>27</span>
+              </span>
+            </div>
+            <p class="tagline">🇧🇷 "O Brasil não é para amadores" 🇧🇷</p>
           </div>
         </div>
       </header>
     <main id="map">
-      <div id="country-name"></div>
-      <div id="svg"></div>
+      <div id="svg" class="full-map"></div>
+      <div id="country-tooltip"></div>
     </main>
     <footer id="footer">
-      <h4>
-        Created with ❤️ by
-        <a href="http://www.glauberramos.com" target="_blank">Glauber Ramos</a>.
-        Check
-        <a
-          href="https://github.com/glauberramos/visited-countries/"
-          target="_blank"
-          >github</a
-        >
-        for instructions to create your own. Check my <a href="/visited-countries">world</a> map.
-      </h4>
+      <div class="footer-content">
+        <p class="footer-quote">🌟 "Quem não sabe de onde veio, não sabe para onde vai" 🌟</p>
+        <h4>
+          Made with ❤️ & ☕ by
+          <a href="http://www.glauberramos.com" target="_blank">Glauber Ramos</a>
+          <span class="footer-divider">✦</span>
+          <a href="https://github.com/glauberramos/visited-countries/" target="_blank">📂 Fork on GitHub</a>
+          <span class="footer-divider">✦</span>
+          <a href="/visited-countries">🌍 World map</a>
+        </h4>
+      </div>
     </footer>
+    <script src="../d3.v4.min.js"></script>
+    <script src="brazil.js"></script>
+    <script src="brazil-script.js"></script>
   </body>
 </html>
