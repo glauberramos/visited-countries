@@ -18,13 +18,17 @@
         }
       });
 
+      const tooltip = d3.select("#country-tooltip");
+
       d3.selectAll("g").on("mouseover", function () {
         d3.selectAll(".hover").classed("hover", false);
         d3.selectAll("#" + this.id).classed("hover", true);
-        displayCountryName(this.id);
+        showTooltip(this.id);
+      }).on("mousemove", function () {
+        moveTooltip(d3.event);
       }).on("mouseout", function () {
         d3.selectAll(".hover").classed("hover", false);
-        d3.select("#country-name").text("");
+        hideTooltip();
       });
 
       d3.selectAll("path").on("mouseover", function () {
@@ -34,15 +38,35 @@
         // If parent is a country group (2-letter code), highlight the group
         if (parentId && /^[A-Z]{2}$/.test(parentId)) {
           d3.selectAll("#" + parentId).classed("hover", true);
-          displayCountryName(parentId);
+          showTooltip(parentId);
         } else {
           d3.selectAll("#" + this.id).classed("hover", true);
-          displayCountryName(this.id);
+          showTooltip(this.id);
         }
+      }).on("mousemove", function () {
+        moveTooltip(d3.event);
       }).on("mouseout", function () {
         d3.selectAll(".hover").classed("hover", false);
-        d3.select("#country-name").text("");
+        hideTooltip();
       });
+
+      function showTooltip(countryId) {
+        const countryName = countryNames[countryId] || countryId.replace(/_/g, " ");
+        tooltip.text(countryName);
+        tooltip.classed("visible", true);
+      }
+
+      function moveTooltip(event) {
+        const tooltipNode = tooltip.node();
+        const tooltipWidth = tooltipNode.offsetWidth;
+        tooltip
+          .style("left", (event.pageX - tooltipWidth / 2) + "px")
+          .style("top", (event.pageY - 60) + "px");
+      }
+
+      function hideTooltip() {
+        tooltip.classed("visible", false);
+      }
 
       const flattenedCountries = countries.flatMap((country) =>
         country.split(" ")
@@ -305,10 +329,6 @@ const countryNames = {
   YT: "Mayotte"
 };
 
-function displayCountryName(countryId) {
-  const countryName = countryNames[countryId] || countryId.replace(/_/g, " ");
-  d3.select("#country-name").text(countryName);
-}
 
 // Modal functionality
 function initModal() {

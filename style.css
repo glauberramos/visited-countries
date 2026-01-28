@@ -203,26 +203,30 @@ a {
   transition: fill 0.2s ease, filter 0.2s ease;
 }
 
-#country-name {
+#country-tooltip {
   font-family: "Nunito", sans-serif;
-  font-size: 1.4em;
+  font-size: 1em;
   font-weight: 700;
-  color: var(--cream);
-  background: transparent;
-  padding: 15px 20px;
-  text-align: center;
-  height: 28px;
-  letter-spacing: 0.5px;
-  position: relative;
-  z-index: 10;
+  color: var(--text-dark);
+  background: var(--cream);
+  padding: 8px 14px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  white-space: nowrap;
+  border: 2px solid var(--accent-warm);
 }
 
-#country-name:not(:empty)::before {
+#country-tooltip.visible {
+  opacity: 1;
+}
+
+#country-tooltip::before {
   content: "📍 ";
-}
-
-#country-name:not(:empty)::after {
-  content: " 📍";
 }
 
 /* Wanderlust elements */
