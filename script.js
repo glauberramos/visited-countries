@@ -26,8 +26,16 @@
 
       d3.selectAll("path").on("mouseover", function () {
         d3.selectAll(".hover").classed("hover", false);
-        d3.selectAll("#" + this.id).classed("hover", true);
-        displayCountryName(this.id);
+        const parent = this.parentNode;
+        const parentId = parent ? parent.id : null;
+        // If parent is a country group (2-letter code), highlight the group
+        if (parentId && /^[A-Z]{2}$/.test(parentId)) {
+          d3.selectAll("#" + parentId).classed("hover", true);
+          displayCountryName(parentId);
+        } else {
+          d3.selectAll("#" + this.id).classed("hover", true);
+          displayCountryName(this.id);
+        }
       });
 
       const flattenedCountries = countries.flatMap((country) =>

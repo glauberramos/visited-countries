@@ -116,7 +116,9 @@ a {
   color: #c0442c;
 }
 
-#map path:hover {
+#map path:hover,
+#map .hover path,
+#map path.hover {
   fill: #efb1b1 !important;
 }
 
