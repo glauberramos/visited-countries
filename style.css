@@ -446,7 +446,6 @@ a {
 
 #header .information:hover {
   transform: scale(1.05);
-  color: var(--primary-medium);
 }
 
 /* Responsive design */
