@@ -8,13 +8,13 @@
       d3.select("#Ocean").attr("fill", "none");
       d3.select("#World").attr("fill", "none");
 
-      // Set all country paths to yellow with transparent 2px borders
+      // Set all country paths with earthy travel-inspired colors
       d3.selectAll("path").each(function () {
         const id = d3.select(this).attr("id");
         if (id !== "Ocean") {
-          d3.select(this).attr("fill", "#ffce5d");
-          d3.select(this).attr("stroke", "#198786");
-          d3.select(this).attr("stroke-width", "1");
+          d3.select(this).attr("fill", "#e8dcc8");
+          d3.select(this).attr("stroke", "#1a3a3a");
+          d3.select(this).attr("stroke-width", "0.3");
         }
       });
 
@@ -48,8 +48,8 @@
         country.split(" ")
       );
       flattenedCountries.forEach(function (country) {
-        d3.select("#" + country).style("fill", "#c0442c");
-        d3.selectAll("#" + country + " path").style("fill", "#c0442c");
+        d3.select("#" + country).style("fill", "#e07a5f");
+        d3.selectAll("#" + country + " path").style("fill", "#e07a5f");
       });
 
       d3.select("#number-countries").text(countries.length);
@@ -222,7 +222,87 @@ const countryNames = {
   VE: "Venezuela",
   YE: "Yemen",
   ZM: "Zambia",
-  ZW: "Zimbabwe"
+  ZW: "Zimbabwe",
+  AD: "Andorra",
+  AG: "Antigua and Barbuda",
+  AI: "Anguilla",
+  AQ: "Antarctica",
+  AS: "American Samoa",
+  AW: "Aruba",
+  BB: "Barbados",
+  BH: "Bahrain",
+  BL: "Saint Barthelemy",
+  BM: "Bermuda",
+  BQ: "Caribbean Netherlands",
+  BS: "Bahamas",
+  CK: "Cook Islands",
+  CV: "Cape Verde",
+  CW: "Curacao",
+  CX: "Christmas Island",
+  DM: "Dominica",
+  DZ: "Algeria",
+  EH: "Western Sahara",
+  FK: "Falkland Islands",
+  FM: "Micronesia",
+  FO: "Faroe Islands",
+  GD: "Grenada",
+  GF: "French Guiana",
+  GG: "Guernsey",
+  GI: "Gibraltar",
+  GL: "Greenland",
+  GP: "Guadeloupe",
+  GS: "South Georgia",
+  GU: "Guam",
+  HK: "Hong Kong",
+  IM: "Isle of Man",
+  IO: "British Indian Ocean Territory",
+  JE: "Jersey",
+  KI: "Kiribati",
+  KM: "Comoros",
+  KN: "Saint Kitts and Nevis",
+  KY: "Cayman Islands",
+  LC: "Saint Lucia",
+  LI: "Liechtenstein",
+  MF: "Saint Martin",
+  MH: "Marshall Islands",
+  MO: "Macau",
+  MP: "Northern Mariana Islands",
+  MQ: "Martinique",
+  MS: "Montserrat",
+  MT: "Malta",
+  MU: "Mauritius",
+  MV: "Maldives",
+  NC: "New Caledonia",
+  NR: "Nauru",
+  NU: "Niue",
+  PF: "French Polynesia",
+  PM: "Saint Pierre and Miquelon",
+  PN: "Pitcairn Islands",
+  PR: "Puerto Rico",
+  PS: "Palestine",
+  PW: "Palau",
+  RE: "Reunion",
+  SB: "Solomon Islands",
+  SC: "Seychelles",
+  SH: "Saint Helena",
+  SM: "San Marino",
+  ST: "Sao Tome and Principe",
+  SX: "Sint Maarten",
+  TC: "Turks and Caicos Islands",
+  TF: "French Southern Territories",
+  TK: "Tokelau",
+  TO: "Tonga",
+  TV: "Tuvalu",
+  UZ: "Uzbekistan",
+  VA: "Vatican City",
+  VC: "Saint Vincent and the Grenadines",
+  VG: "British Virgin Islands",
+  VI: "US Virgin Islands",
+  VU: "Vanuatu",
+  WF: "Wallis and Futuna",
+  WS: "Samoa",
+  XK: "Kosovo",
+  YT: "Mayotte"
 };
 
 function displayCountryName(countryId) {
