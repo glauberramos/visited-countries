@@ -309,3 +309,53 @@ function displayCountryName(countryId) {
   const countryName = countryNames[countryId] || countryId.replace(/_/g, " ");
   d3.select("#country-name").text(countryName);
 }
+
+// Modal functionality
+function initModal() {
+  const modal = document.getElementById('countries-modal');
+  const closeBtn = document.querySelector('.modal-close');
+  const countriesList = document.getElementById('countries-list');
+  const passportStamp = document.querySelector('.passport-stamp');
+
+  if (!modal || !countriesList || !passportStamp) return;
+
+  function openModal() {
+    countriesList.innerHTML = '';
+    countries.forEach(code => {
+      const li = document.createElement('li');
+      li.textContent = countryNames[code] || code;
+      countriesList.appendChild(li);
+    });
+
+    modal.classList.add('show');
+  }
+
+  function closeModal() {
+    modal.classList.remove('show');
+  }
+
+  passportStamp.addEventListener('click', openModal);
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeModal);
+  }
+
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      closeModal();
+    }
+  });
+}
+
+// Initialize when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initModal);
+} else {
+  initModal();
+}

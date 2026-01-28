@@ -246,10 +246,12 @@ a {
   background: rgba(224, 122, 95, 0.08);
   transform: rotate(-2deg);
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .passport-stamp:hover {
   transform: rotate(0deg) scale(1.05);
+  background: rgba(224, 122, 95, 0.15);
 }
 
 .stamp-label {
@@ -336,6 +338,111 @@ a {
 
 .footer-icons:hover {
   opacity: 1;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 58, 58, 0.9);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-content {
+  background: var(--cream);
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 600px;
+  max-height: 70vh;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content h3 {
+  margin: 0 0 20px;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.8em;
+  color: var(--primary-medium);
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+  line-height: 1;
+}
+
+.modal-close:hover {
+  color: var(--accent-warm);
+  transform: rotate(90deg);
+}
+
+#countries-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+}
+
+#countries-list li {
+  padding: 5px 8px;
+  background: rgba(45, 90, 90, 0.08);
+  border-radius: 4px;
+  font-size: 0.8em;
+  color: var(--text-dark);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#countries-list li::before {
+  content: "✓";
+  color: var(--accent-warm);
+  font-weight: 700;
+  font-size: 0.75em;
+}
+
+#countries-list li:hover {
+  background: var(--accent-warm);
+  color: white;
+}
+
+#countries-list li:hover::before {
+  color: white;
+}
+
+#header .information {
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+#header .information:hover {
+  transform: scale(1.05);
+  color: var(--primary-medium);
 }
 
 /* Responsive design */
