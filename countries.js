@@ -33,11 +33,11 @@ countries = [
   "AT", // Austria
   "MC", // Monaco
   "CH", // Switzerland
-  "RS", // Serbia
   "ME", // Montenegro
   "AL", // Albania
   "BA", // Bosnia
   "GR", // Greece
   "SG", // Singapore
   "VN", // Vietnam
+  "PH", // Philippines
 ];

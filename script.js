@@ -22,6 +22,9 @@
         d3.selectAll(".hover").classed("hover", false);
         d3.selectAll("#" + this.id).classed("hover", true);
         displayCountryName(this.id);
+      }).on("mouseout", function () {
+        d3.selectAll(".hover").classed("hover", false);
+        d3.select("#country-name").text("");
       });
 
       d3.selectAll("path").on("mouseover", function () {
@@ -36,6 +39,9 @@
           d3.selectAll("#" + this.id).classed("hover", true);
           displayCountryName(this.id);
         }
+      }).on("mouseout", function () {
+        d3.selectAll(".hover").classed("hover", false);
+        d3.select("#country-name").text("");
       });
 
       const flattenedCountries = countries.flatMap((country) =>
@@ -43,7 +49,7 @@
       );
       flattenedCountries.forEach(function (country) {
         d3.select("#" + country).style("fill", "#c0442c");
-        d3.select("#" + country + " path").style("fill", "#c0442c");
+        d3.selectAll("#" + country + " path").style("fill", "#c0442c");
       });
 
       d3.select("#number-countries").text(countries.length);
