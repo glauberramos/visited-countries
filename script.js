@@ -59,9 +59,10 @@
       function moveTooltip(event) {
         const tooltipNode = tooltip.node();
         const tooltipWidth = tooltipNode.offsetWidth;
+        const tooltipHeight = tooltipNode.offsetHeight;
         tooltip
-          .style("left", (event.pageX - tooltipWidth / 2) + "px")
-          .style("top", (event.pageY - 60) + "px");
+          .style("left", (event.clientX - tooltipWidth / 2) + "px")
+          .style("top", (event.clientY - tooltipHeight - 15) + "px");
       }
 
       function hideTooltip() {
