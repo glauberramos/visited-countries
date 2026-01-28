@@ -25,10 +25,17 @@ img {
   position: relative;
   filter: drop-shadow(0 3px 6px rgba(0,0,0,0.15));
   transition: transform 0.3s ease;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
 }
 
 img:hover {
-  transform: scale(1.05) rotate(-3deg);
+  animation-play-state: paused;
+  transform: scale(1.1) rotate(-5deg);
 }
 
 #header {
@@ -208,6 +215,127 @@ a {
   letter-spacing: 0.5px;
   position: relative;
   z-index: 10;
+}
+
+#country-name:not(:empty)::before {
+  content: "📍 ";
+}
+
+#country-name:not(:empty)::after {
+  content: " 📍";
+}
+
+/* Wanderlust elements */
+.tagline-top {
+  margin: 0 0 10px;
+  font-size: 0.75em;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--accent-warm);
+  opacity: 0.8;
+}
+
+.passport-stamp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 20px;
+  border: 3px solid var(--accent-warm);
+  border-radius: 8px;
+  background: rgba(224, 122, 95, 0.08);
+  transform: rotate(-2deg);
+  transition: transform 0.3s ease;
+}
+
+.passport-stamp:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+.stamp-label {
+  font-size: 0.6em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent-warm);
+  margin-top: -5px;
+}
+
+.divider {
+  color: var(--accent-gold);
+  font-size: 1.5em;
+  opacity: 0.6;
+}
+
+.tagline {
+  margin: 15px 0 12px;
+  font-size: 0.9em;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--primary-medium);
+  opacity: 0.9;
+}
+
+.continents {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.continent {
+  font-size: 0.75em;
+  font-weight: 600;
+  padding: 4px 10px;
+  background: rgba(45, 90, 90, 0.1);
+  border-radius: 20px;
+  color: var(--primary-medium);
+  cursor: default;
+  transition: all 0.3s ease;
+}
+
+.continent:hover {
+  background: var(--accent-warm);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Footer enhancements */
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 25px 20px 20px;
+}
+
+.footer-quote {
+  margin: 0 0 10px;
+  font-size: 0.85em;
+  font-style: italic;
+  font-weight: 300;
+  opacity: 0.85;
+  letter-spacing: 0.5px;
+}
+
+#footer h4 {
+  padding: 10px 20px;
+}
+
+.footer-divider {
+  margin: 0 8px;
+  opacity: 0.5;
+}
+
+.footer-icons {
+  margin: 15px 0 0;
+  font-size: 1.4em;
+  letter-spacing: 8px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.footer-icons:hover {
+  opacity: 1;
 }
 
 /* Responsive design */

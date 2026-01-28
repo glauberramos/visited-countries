@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
     <title>Countries I have visited</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,12 +53,15 @@
     <header id="header">
       <img src="backpack.png" alt="Backpack icon" title="Backpack icon" />
       <h1>Glauber's</h1>
-      <h2 class="subheader">visited countries</h2>
+      <h2 class="subheader">🌍 visited countries 🌎</h2>
       <div id="header-info">
         <div id="statistic">
           <div class="number-section">
-            <span id="number-countries" class="information"></span>
-
+            <span class="passport-stamp">
+              <span id="number-countries" class="information"></span>
+              <span class="stamp-label">countries</span>
+            </span>
+            <span class="divider">•</span>
             <span class="numbers">
               <span id="globe-percent"></span>
               <span>of</span>
@@ -65,9 +69,9 @@
                 target="_blank"
                 href="http://en.wikipedia.org/wiki/Member_states_of_the_United_Nations"
               >193</a>
-              <span>UN countries</span>
             </span>
           </div>
+          <p class="tagline">🧭 "Not all who wander are lost" 🗺️</p>
         </div>
       </div>
     </header>
@@ -76,17 +80,17 @@
       <div id="svg" class="full-map"></div>
     </main>
     <footer id="footer">
-      <h4>
-        Created with ❤️ by
-        <a href="http://www.glauberramos.com" target="_blank">Glauber Ramos</a>.
-        Check
-        <a
-          href="https://github.com/glauberramos/visited-countries/"
-          target="_blank"
-          >github</a
-        >
-        for instructions to create your own. Check my <a href="/visited-countries/brazil-states">brazilian</a> map.
-      </h4>
+      <div class="footer-content">
+        <p class="footer-quote">🌟 "The world is a book, and those who do not travel read only one page" 🌟</p>
+        <h4>
+          Made with ❤️ & ☕ by
+          <a href="http://www.glauberramos.com" target="_blank">Glauber Ramos</a>
+          <span class="footer-divider">✦</span>
+          <a href="https://github.com/glauberramos/visited-countries/" target="_blank">📂 Fork on GitHub</a>
+          <span class="footer-divider">✦</span>
+          <a href="/visited-countries/brazil-states">🇧🇷 Brazil map</a>
+        </h4>
+      </div>
     </footer>
   </body>
 </html>
