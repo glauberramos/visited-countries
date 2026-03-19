@@ -40,4 +40,5 @@ countries = [
   "SG", // Singapore
   "VN", // Vietnam
   "PH", // Philippines
+  "AU", // Australia
 ];
