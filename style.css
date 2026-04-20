@@ -174,7 +174,7 @@ h1 {
 .numbers {
   display: inline-flex;
   align-items: baseline;
-  gap: 8px;
+  gap: 5px;
   font-size: 1.1em;
   font-weight: 400;
   color: var(--primary-medium);
@@ -321,6 +321,7 @@ a {
   font-weight: 300;
   opacity: 0.85;
   letter-spacing: 0.5px;
+  text-align: center;
 }
 
 #footer h4 {
