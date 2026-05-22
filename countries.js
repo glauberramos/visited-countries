@@ -42,4 +42,7 @@ countries = [
   "PH", // Philippines
   "AU", // Australia
   "NZ", // New Zealand
+  "JP", // Japan
+  "KR", // South Korea
+  "CN", // China
 ];
